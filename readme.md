@@ -11,6 +11,7 @@
 * cisco Documentation for 5.x
   https://www.cisco.com/c/en/us/td/docs/dcn/aci/apic/5x/security-configuration/cisco-apic-security-configuration-guide-release-52x/access-authentication-and-accounting-52x.html#task_EB1F08D384C942FB82554D78CD7FA6D5
 * Generate key and certificate
+
   openssl genrsa -out server.key 4096
   openssl req -new -key server.key -out server.csr -subj '/CN=User certtest/O=BOSCH/C=DE
   openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
