@@ -1,7 +1,7 @@
 # Example of how to use private key for API transaction with cisco ACI
 
 * Summary
-  This is an example how to signed payload with a private key to communicate withput aaa token with cisco APIC.
+  This is an example how to sign payload with a private key to communicate without aaa token to cisco APIC.
   For this you need to sign any payload you send and add the signed base64 encode string as cookie
   e.g. self.cookie = {'APIC-Request-Signature' : payloadsign_base64, 'APIC-Certificate-DN' : certdn, 'APIC-Certificate-Algorithm' : 'v1.0', 'APIC-Certificate-Fingerprint' : 'fingerprint'}
   See cisco documentaion or review so code for more details.
